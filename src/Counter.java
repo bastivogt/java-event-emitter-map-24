@@ -13,7 +13,8 @@ public class Counter {
     private int count;
 
     public Counter(int start, int stop, int step) {
-        this.eventEmitter = new EventEmitter<CounterEvent>();
+        //this.eventEmitter = new EventEmitter<CounterEvent>();
+        this.eventEmitter = EventEmitter.initialize();
         this.start = start;
         this.stop = stop;
         this.step = step;
